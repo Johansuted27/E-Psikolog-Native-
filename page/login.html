@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>E-Psikolog - Login</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        section.content {
+            padding: 7% 0 7% 0;
+        }
+        
+        section.content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 33%;
+            height: 100%;
+            background-color: #0069D9;
+        }
+        
+        #row-content {
+            height: 500px;
+        }
+        
+        #left-section-login {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/assets/bg-class.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="content">
+        <div class="container">
+            <div class="row" id="row-content">
+                <div class="col-xl-6" id="left-section-login">
+                    <div class="text-center" style="margin-top: 40%;">
+                        <h1 class="Montserrat text-white text-uppercase font-weight-bold">E-Psikolog</h1>
+                    </div>
+                </div>
+                <div class="col-xl-6 py-4 px-5" style="background-color: #fff;">
+                    <div class="text-right mb-5">
+                        <a href="#">Buat akun baru</a>
+                    </div>
+                    <h3 class="Montserrat font-weight-bold">Login</h3>
+                    <p class="Poppins mb-4">Silahkan masukan username dan password anda!</p>
+                    <form action="">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Masukan Email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Masukan Password">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary Poppins py-2 px-3">Masuk</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+</body>
+
+</html>
