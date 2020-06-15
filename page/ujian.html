@@ -64,57 +64,54 @@
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                         <li class="breadcrumb-item active">Form Ujian</li>
                     </ol>
-                    <h1 class="mt-4">Form Ujian</h1>
                     <div class="card mb-4">
-                        <div class="card-body">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>.</div>
-                    </div>
-                    <div class="card mb-4">
+                        <div class="card-header">
+                            <p class="card-title m-0 font-weight-bold">Form Ujian</p>
+                        </div>
                         <div class="card-body">
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Judul Ujian</label>
-                                <input class="form-control col-sm-10" type="text" placeholder="Masukkan Judul Ujian...">
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label" >Tanggal</label>
-                                <input type="text" id="date" class="form-control col-sm-2">
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Nama Sekolah</label>
-                                <input class="form-control col-sm-10" type="text" placeholder="Masukkan Judul Ujian...">
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Alamat</label>
-                                <textarea name="description" id="description" class="form-control col-sm-10" cols="30" rows="5" placeholder="Masukakkan Alamat..."></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <label  >Set Waktu</label>
-                                <div class="row">
-                                    <div class="col-sm-1"></div>
-                                    <label class="col-sm-1 col-form-label" >Mulai</label>
-                                    <input type="text" id="date" class="form-control col-sm-1 mb-2">
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1"></div>
-                                    <label class="col-sm-1 col-form-label" >Selesai</label>
-                                    <input type="text" id="date" class="form-control col-sm-1">
-                                </div>
-                            </div>
-                            <div class="form-group ">
+                            <form action="" autocomplete="off">
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Jumlah kelas</label>
-                                    <input class="form-control col-sm-2" type="text">
+                                    <label class="col-xl-2 col-form-label">Judul Ujian</label>
+                                    <input class="form-control col-xl-10" type="text" placeholder="Masukkan Judul Ujian...">
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Jenjang</label>
-                                <select class="form-control col-sm-4">
-                                    <option>SLTA</option>
-                                    <option>SLTP</option>
-                                </select>
-                            </div>
-                            <div class="form-group mt-8">
-                                <button type="submit" class="btn btn-success ">Simpan</button>
-                            </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-2 col-form-label">Tanggal</label>
+                                    <input type="date" id="date" class="form-control col-xl-10">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-2 col-form-label">Nama Sekolah</label>
+                                    <input class="form-control col-xl-10" type="text" placeholder="Masukkan Judul Ujian...">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-2 col-form-label">Alamat</label>
+                                    <textarea name="description" id="description" class="form-control col-xl-10" cols="30" rows="5" placeholder="Masukakkan Alamat..."></textarea>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-2">Set Waktu</label>
+                                    <div class="form-group col-xl-5">
+                                        <label for="">Mulai</label>
+                                        <input type="time" id="date" class="form-control">
+                                    </div>
+                                    <div class="form-group col-xl-5">
+                                        <label for="">Selesai</label>
+                                        <input type="time" id="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-2 col-form-label">Jumlah kelas</label>
+                                    <input type="text" name="" id="" class="form-control col-xl-5" placeholder="Masukan jumlah kelas">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-2 col-form-label">Jenjang</label>
+                                    <select class="form-control col-xl-4">
+                                        <option>SLTA</option>
+                                        <option>SLTP</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <button type="submit" class="btn btn-success ">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -130,21 +127,20 @@
     </div>
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-      <link rel="stylesheet" href="/resources/demos/style.css">
-      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script>
-         
-        $( function() {
-            $( "#date" ).datepicker({
-              dateFormat: "yy-mm-dd"
-            });
+        // $(function() {
+        //     $("#date").datepicker({
+        //         dateFormat: "yy-mm-dd"
+        //     });
 
-              
 
-          } );    
+
+        // });
     </script>
 </body>
 
