@@ -62,38 +62,51 @@
                 <div class="container-fluid">
                     <ol class="breadcrumb mb-4 mt-4">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="ujian.html">Tambah Ujian</a></li>
-                        <li class="breadcrumb-item active">Pengaturan Kelas</li>
+                        <li class="breadcrumb-item"><a href="list.html">Daftar Ujian</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Daftar Kelas</a></li>
+                        <li class="breadcrumb-item"><a href="list.html">Daftar Murid</a></li>
+                        <li class="breadcrumb-item active">Edit Tambah Murid</li>
                     </ol>
                     <div class="card mb-4">
-                         <div class="card-header bg-light d-flex">
-                            <p class="card-title m-0 font-weight-bold">Pengaturan Kelas</p>
+                         <div class="card-header bg-light">
+                            <p class="card-title m-0 font-weight-bold">Edit Tambah Murid</p>
                         </div>
-                        <div class="card-body">
-                            <div class=" text-right mt-3 mb-4 mr-4">
-                                <a href="#" class="btn btn-primary btn-sm ">Tambah <i class="fas fa-plus-circle"></i></a>
+                        <div class="card-body row">
+                            <div class="col-xl">
+                                <!-- card tambah data -->
+                                <div class="card mb-2">
+                                    <div class="card-header">
+                                        <p class="m-0 card-title">Tambah Data</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="" autocomplete="off">
+                                            <div class="form-group row">
+                                                <label class="col-xl-2 col-form-label mb-4">Nama</label>
+                                                <input class="form-control col-xl-7" type="text" placeholder="Masukkan Nama ...">
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-xl-2 col-form-label mb-4">Jenis Kelamin</label>
+                                                <select class="form-control col-xl-4">
+                                                    <option>Laki-Laki</option>
+                                                    <option>Perempuan</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-xl-2 col-form-label mb-4">Status</label>
+                                                <select class="form-control col-xl-4">
+                                                    <option>Aktif</option>
+                                                    <option>Non-Aktif</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class=" text-right mt-4 mb-5 mr-5">
+                                                <a href="daftar_murid.html" class="btn btn-outline-secondary btn-sm mr-3 ">Kembali</a>
+                                                <a href="#" class="btn btn-success btn-sm">Ubah</a>          
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                                <div class="form-group row">
-                                    <label class="col-xl-2 col-form-label">Nama Kelas</label>
-                                    <input class="form-control col-sm-10" type="text" placeholder="Masukkan Nama Kelas ...">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-xl-2 col-form-label">Nama Kelas</label>
-                                    <input class="form-control col-sm-10" type="text" placeholder="Masukkan Nama Kelas ...">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-xl-2 col-form-label">Nama Kelas</label>
-                                    <input class="form-control col-sm-10" type="text" placeholder="Masukkan Nama Kelas ...">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-xl-2 col-form-label">Nama Kelas</label>
-                                    <input class="form-control col-sm-10" type="text" placeholder="Masukkan Nama Kelas ...">
-                                </div>
-                            <div class=" text-right mt-4 mb-5 mr-5">
-                                <a href="ujian.html" class="btn btn-outline-secondary btn-sm mr-3">Kembali</a>
-                                <a href="pilih_kategori.html" class="btn btn-success btn-sm ">Lanjutkan</a>          
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -109,4 +122,4 @@
     </div>
 </body>
 
-</html> 
+</html>

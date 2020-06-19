@@ -62,10 +62,6 @@
                 <div class="container-fluid">
                     <ol class="breadcrumb mb-4 mt-4">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="ujian.html">Form Ujian</a></li>
-                        <li class="breadcrumb-item"><a href="setting_kelas.html">Pengaturan Kelas</a></li>
-                        <li class="breadcrumb-item"><a href="pilih_kategori.html">Pilih Kategori Soal</a></li>
-                        <li class="breadcrumb-item"><a href="daftar_kelas.html">Daftar Kelas</a></li>
                         <li class="breadcrumb-item active">Daftar Ujian</li>
                     </ol>
                     <div class="card mb-4">
@@ -73,7 +69,8 @@
                             <p class="card-title m-0 font-weight-bold">Daftar Ujian</p>
                         </div>
                         <form action="">
-                            <div class="form-group row">
+                            <!-- cari daftar ujian -->
+                            <!-- <div class="form-group row">
                                 <div class="col-xl-2">
                                     <label for="inputPassword" class="col-xl mt-4 ml-4 col-form-label">Daftar Ujian</label>
                                 </div>
@@ -85,85 +82,82 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-xl-3">
-                                    <div class=" text-right mt-4 mb-4 mr-5">
-                                        <a href="#" class="btn btn-primary btn-sm">Tambahkan <i class="fas fa-plus-circle"></i></a>
+                            </div> -->
+                            <div class="form-group row">
+                                <label for="inputPassword" class="offset-xl-1 col-xl-2 mt-3 col-form-label">Daftar Ujian</label>
+                                <div class="col-xl-7">
+                                    <div class="input-group ml-auto mt-3 mb-3">
+                                        <input type="text" class="form-control" name="category" id="category" placeholder="Cari Ujian ..." autocomplete="off">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                                        </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
+                        <!-- list daftar ujian -->
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-xl">
                                     <div class="card mb-2">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="d-flex">
-                                                        <p class="my-0 font-weight-bold">#</p>
-                                                        <div class="align-self-center ml-auto">
-                                                            <a href="" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
-                                                            <a href="kesamaan_kata/soal.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
-                                                        </div>
+                                        <div class="card-body row">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex">
+                                                    <p class="my-0 font-weight-bold">#</p>
+                                                    <div class="align-self-center ml-auto">
+                                                        <a href="edit_list_sekolah.html" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
+                                                        <a href="list_kelas.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card mb-2">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="d-flex">
-                                                        <p class="my-0 font-weight-bold">#</p>
-                                                        <div class="align-self-center ml-auto">
-                                                            <a href="" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
-                                                            <a href="kesamaan_kata/soal.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
-                                                        </div>
+                                        <div class="card-body row">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex">
+                                                    <p class="my-0 font-weight-bold">#</p>
+                                                    <div class="align-self-center ml-auto">
+                                                        <a href="edit_list_sekolah.html" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
+                                                        <a href="list_kelas.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card mb-2">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="d-flex">
-                                                        <p class="my-0 font-weight-bold">#</p>
-                                                        <div class="align-self-center ml-auto">
-                                                            <a href="" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
-                                                            <a href="kesamaan_kata/soal.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
-                                                        </div>
+                                        <div class="card-body row">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex">
+                                                    <p class="my-0 font-weight-bold">#</p>
+                                                    <div class="align-self-center ml-auto">
+                                                        <a href="edit_list_sekolah.html" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
+                                                        <a href="list_kelas.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card mb-2">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="d-flex">
-                                                        <p class="my-0 font-weight-bold">#</p>
-                                                        <div class="align-self-center ml-auto">
-                                                            <a href="" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
-                                                            <a href="kesamaan_kata/soal.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
-                                                        </div>
+                                        <div class="card-body row">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex">
+                                                    <p class="my-0 font-weight-bold">#</p>
+                                                    <div class="align-self-center ml-auto">
+                                                        <a href="edit_list_sekolah.html" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
+                                                        <a href="list_kelas.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card mb-2">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="d-flex">
-                                                        <p class="my-0 font-weight-bold">#</p>
-                                                        <div class="align-self-center ml-auto">
-                                                            <a href="" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
-                                                            <a href="kesamaan_kata/soal.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
-                                                        </div>
+                                        <div class="card-body row">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex">
+                                                    <p class="my-0 font-weight-bold">#</p>
+                                                    <div class="align-self-center ml-auto">
+                                                        <a href="edit_list_sekolah.html" class="fas fa-pencil-alt mr-2 text-warning" style="text-decoration: none;"></a>
+                                                        <a href="list_kelas.html" class="btn btn-sm btn-outline-info mr-3">Lihat Kelas</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -171,10 +165,10 @@
                                     </div>
                                 </div>    
                             </div>
-
+                            
                             <div class=" text-right mt-4 mb-5 mr-5">
-                                <a href="daftar_kelas.html" class="btn btn-outline-secondary btn-sm mr-3 ">Kembali</a>
-                                <a href="#" class="btn btn-success btn-sm">Lanjutkan</a>          
+                                <a href="index.html" class="btn btn-outline-secondary btn-sm mr-3 ">Kembali</a>
+                                <a href="list_kelas.html" class="btn btn-success btn-sm">Lanjutkan</a>          
                             </div>
                         </div>
                     </form>
