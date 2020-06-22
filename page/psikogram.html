@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tables - SB Admin</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">E-PSIKOLOG</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <!-- <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Menu</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Detail Menu</div>
+                        <a class="nav-link" href="soal.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-database"></i></div>
+                            Soal
+                        </a>
+                        <a class="nav-link" href="ujian.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                            Ujian
+                        </a>
+                        <a class="nav-link" href="list.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-clipboard-list"></i></div>
+                            List
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <ol class="breadcrumb mb-4 mt-4">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="list.html">Daftar Ujian</a></li>
+                        <li class="breadcrumb-item active">Daftar Kelas</li>
+                    </ol>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="text-uppercase text-center" style="width: 100%;">
+                            <h3>Psikogram</h3>
+                            <p class="font-weight-bold m-0">Kesimpulan Hasil Psikotes</p>
+                            <p class="font-weight-bold m-0"><u>Laporan Pemeriksaan Psikologis</u></p>
+                        </div>
+                        <div class="text-left font-weight-bold mt-5" style="width: 100%;">
+                            <div class="d-flex">
+                                <p class="mr-1 title-bio">Nama</p>
+                                <p class="mr-2">:</p>
+                                <p>F. Veronika Claudia Tanisa</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mr-1 title-bio">Sekolah</p>
+                                <p class="mr-2">:</p>
+                                <p>SMK Cakra Bangsa</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mr-1 title-bio">Kelas</p>
+                                <p class="mr-2">:</p>
+                                <p>X</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mr-1 title-bio">Tanggal Test</p>
+                                <p class="mr-2">:</p>
+                                <p>16 Juni 2018</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mr-1 title-bio">Tujuan Pemeriksaan</p>
+                                <p class="mr-2">:</p>
+                                <p>Evaluasi Psikologis</p>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered" width="100%" cellspacing="0">
+                                <thead class="text-center text-uppercase">
+                                    <tr>
+                                        <th rowspan="3" style="vertical-align: middle;">Aspek Psikologis</th>
+                                        <th colspan="5">Standard Score (SS Baku)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Rendah</th>
+                                        <th>Kurang</th>
+                                        <th>Cukup</th>
+                                        <th>Baik</th>
+                                        <th>Tinggi</th>
+                                    </tr>
+                                    <tr>
+                                        <th>(--)</th>
+                                        <th>(-)</th>
+                                        <th></th>
+                                        <th>(+)</th>
+                                        <th>(++)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <!-- KECERDASAN UMUM -->
+                                    <tr>
+                                        <th colspan="6" class="bg-light">Kecerdasan Umum</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Pengetahuan Umum</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Kesamaan Kata</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Hubungan Kata</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Pengertian Kata</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Aritmatika</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. Deret Angka</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. Digit Simbol</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8. Spatial</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9. Object Assembly</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10. Tes Logika</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="">
+                                            <p class="m-0"><b>Score Intelegensi Umum (IQ) :  104</b></p>
+                                            <p class="m-0"><b>Tergolong :  <i>Average</i></b></p>
+                                        </td>
+                                    </tr>
+
+                                    <!-- KECERDASAN MAJEMUK -->
+                                    <tr>
+                                        <th colspan="6" class="bg-light">Kecerdasan Majemuk</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Kecerdasan Verbal/Linguistik</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Kecerdasan Logis/Matematis</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Kecerdasan Visual/Spatial</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Kecerdasan Kinestetik</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Kecerdasan Musical</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. Kecerdasan Interpersonal</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. Kecerdasan Intrapersonal</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8. Kecerdasan Naturalis</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+
+                                    <!-- KOMITMEN BELAJAR -->
+                                    <tr>
+                                        <th colspan="6" class="bg-light">Komitmen Belajar</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Motivasi Belajar</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Keuletan</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Ketahanan Belajar</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Komitmen Diri</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Kepatuhan</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+
+                                    <!-- EQ -->
+                                    <tr>
+                                        <th colspan="6" class="bg-light">EQ</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Penyesuaian diri</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Pengendalian sikap </td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Empati</td>
+                                        <td class="text-center">1 2 3 4</td>
+                                        <td class="text-center">5 6 7 8</td>
+                                        <td class="text-center">9 10 11 12</td>
+                                        <td class="text-center">13 14 15 16</td>
+                                        <td class="text-center">17 18 19 20</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="6" class="bg-light">Hasil Tes Kecerdasan Emosi</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <p><b>Total: 12-19</b></p>
+                                            <p>
+                                                Emosi Anda tidak mudah menjadi tenang. Untuk menyatakan sebuah maksud baik, Anda berlindung dibalik tanggapan yang “tepat”, sering memaksakan diri untuk bersikap patuh dan lembut. Bila Anda tidak dapat menghadapi emosi dengan jujur, akui saja bahwa emosi
+                                                itu memang ada, walaupun sebenarnya Anda hanya dapat menirukan tanggapan yang tepat bukan mengubahnya untuk dapat digunakan secara konstruktif. Menekan emosi dapat menimbulkan penyakit mental dan fisik.
+                                                Pendirian yang dipegang teguh secara emosional tidak benar dan sering bersifat dogmatisme moralistis.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row mt-5" style="width: 100%;">
+                            <div class="col-xl">
+                                <h5 class="text-uppercase text-center">HASIL ANALISA KEPRIBADIAN</h5>
+                                <h5 class="text-uppercase text-left mt-3">KEPRIBADIAN DIRI HASIL TES DISC</h5>
+                                <h3 class="text-left ml-5 mt-3">A. Plegmatis (Stabil)</h3>
+                                <div class="" style="width:100%;">
+                                    <p class="text-justify">
+                                        <b>Karakteristik Umum :</b> Mereka yang memiliki kepribadian ini adalah seorang pendengar yang baik, pemain timyang unggul, seorang yang posesif dan menenangkan. Mereka juga seseorang yang mudah untuk ditebak dansangat
+                                        ramah serta selalu berusaha memahami orang lain.
+                                    </p>
+                                    <p class="text-justify">
+                                        <b>Nilai yang dibawa untuk tim :</b> Nilai atau kelebihan yang mereka miliki adalah dapat diandalkan, seorang pekerjatim yang sangat setia, patuh terhadap pihak manajemen atau orang-orang yang memiliki otoritas,
+                                        penyabar,seorang yang memiliki empati tinggi dan sangat handal dalam mendamaikan konflik.
+                                    </p>
+                                    <p class="text-justify">
+                                        <b>Kemungkinan Kelemahan :</b> Kekurangan mereka adalah suka menolak perubahan, sehingga membutuhkan waktuyang cukup lama untuk menyesuaikan diri dengan lingkungan baru. Ups! Hati-hati karena mereka seorang yangpendendam,
+                                        peka terhadap kritik dan kesulitan untuk menetapkan prioritas.
+                                    </p>
+                                    <p class="text-justify">
+                                        <b>Ketakutan Terbesar :</b> Mereka takut kehilangan rasa aman.Hal yang dapat memotivasi para Steadiness: Mereka sangat termotivasi oleh pengakuan untuk kesetiaan danketergantungan, sangat menyukai keselamatan dan
+                                        keamanan. Jadi, dimana ada situasi yang aman, disanalahmereka akan bertahan lama. Mereka akan sangat termotivasi untuk berada di lingkungan yang tidak memilikiperubahan secara mendadak, baik dalam prosedur atau
+                                        gaya hidup. Mereka juga sangat menyukai hal-hal yangmudah untuk dikerjakan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5" style="width: 100%">
+                            <div class="col-xl">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th>TIPE KEPRIBADIAN 16 PF.</th>
+                                                <th>KARIR PEKERJAAN YANG SESUAI</th>
+                                            </tr>
+                                            <tr>
+                                                <td>ESFJ :Extrovert, Sensing, Feeling, Judging</td>
+                                                <td>Pengajar, Pengkhotbah, Penjual, Konseling</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    ESFJ akan seimbang bila:
+                                                    <ul>
+                                                        <li>Memiliki orang-orang pendukung yang mengelola bidang-bidang yang menuntut ketelitian fakta sepertiakuntansi.</li>
+                                                        <li>Berusaha untuk bersikap ringkas dan profesional .</li>
+                                                        <li>Tidak membiarkan sikap-sikap sosial memperlambat dirinya dalam pekerjaan.</li>
+                                                        <li>Mengambil waktu untuk memperoleh pengetahuan tangan pertama tentang seseorang atau situasi sebelummembuat suatu asumsi.</li>
+                                                        <li>Menghadapi fakta-fakta yang tak dapat disetujui, daripada mengabaikan masalah-masalahnya.</li>
+                                                        <li>Memiliki lebih banyak waktu-waktu ekstrovert daripada waktu introvert.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5" style="width: 100%">
+                            <div class="col-xl">
+                                <h5 class="text-uppercase">KECERDASAN MAJEMUK (BAKAT DAN POTENSI DIRI)</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th>RANGKING 1 – KECERDASAN 6</th>
+                                                <th>RANGKING 2 – KECERDASAN 3</th>
+                                                <th>RANGKING 3 – KECERDASAN 4</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><b>INTERPERSONAL.</b></p> Kemampuan untuk menjalinhubungan (berkomunikasi) denganorang lain, memahami kebutuhandan perilaku orang lain, mengenaliperasaan dengan jeli, melihat darisudut pandang orang
+                                                    lain(berempati), bekerja sama(teamwork), pandai membangunkepercayaan dan mempertahankanhubungan positif.
+                                                </td>
+                                                <td>
+                                                    <p><b>VISUAL/ SPASIAL.</b></p> Kemampuan berpikir 2 atau 3dimensi, termasuk pemahaman akanbentuk dan ruang serta hubunganantar benda dalam ruangan,memiliki kepekaan akan arah ataulokasi tertentu.
+                                                </td>
+                                                <td>
+                                                    <p><b>KINESTETIK.</b></p> Kemampuan untuk menggunakangerak tubuh atau bergerak denganketepatan(presisi) tinggi danmengekspresikan ide atau perasaanmelalui gerakan tertentu.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted m-auto">Copyright &copy; E-Psikolog 2020</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
