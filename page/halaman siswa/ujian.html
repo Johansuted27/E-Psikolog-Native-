@@ -12,6 +12,9 @@
     <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
@@ -22,14 +25,36 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    <!-- <a class="dropdown-item" href="#">Settings</a>
-                        <a class="dropdown-item" href="#">Activity Log</a>
-                        <div class="dropdown-divider"></div> -->
-                    <a class="dropdown-item" href="">Logout</a>
+                    <a class="dropdown-item mt-4 text-muted">
+                        <table style="line-height: 20px;">
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td>Jhon Dow</td>
+                            </tr>
+                            <tr>
+                                <td>Sekolah</td>
+                                <td>:</td>
+                                <td>SMK Cakra Bangsa</td>
+                            </tr>
+                            <tr>
+                                <td>Kelas</td>
+                                <td>:</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>:</td>
+                                <td>Aktif</td>
+                            </tr>
+                        </table>
+                    </a>    
+                    <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
                 </div>
             </li>
         </ul>
-    </nav>
+    </nav>  
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -41,13 +66,13 @@
                             Dashboard
                         </a>
                         <div class="sb-sidenav-menu-heading">Detail Menu</div>
-                        <a class="nav-link" href="#">
-                            <div class="sb-nav-link-icon"><i class="fas fa-user fa-fw"></i></div>
-                            Profil
-                        </a>
-                        <a class="nav-link active" href="ujian_siswa.html">
+                        <a class="nav-link active" href="ujian.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                             Ujian
+                        </a>
+                        <a class="nav-link" href="psikogram.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                            Hasil Ujian
                         </a>
                     </div>
                 </div>
@@ -61,8 +86,18 @@
                         <li class="breadcrumb-item active">Ujian</li>
                     </ol>
                     <div class="card mb-4">
-                        <div class="card-body mb-4 mt-4">
-                            <h3 style="text-align: center;">Content</h3>
+                        <div class="text-center mb-2 mt-5" style="width: 100%;">
+                            <h4>Tujuan Psikologi Pengenalan Minat dan Bakat</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center" style="line-height: 6px;">
+                                <p>Nama Sekolah :</p>
+                                <p>Durasi Pengerjaan :</p>
+                                <p>Status :</p>
+                            </div>
+                            <div class=" text-center mt-5 mb-5">
+                                <a href="ujian.html" class="btn btn-success btn-sm">Mulai Ujian</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,23 +111,6 @@
             </footer>
         </div>
     </div>
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <script>
-        // $(function() {
-        //     $("#date").datepicker({
-        //         dateFormat: "yy-mm-dd"
-        //     });
-
-
-
-        // });
-    </script>
 </body>
 
 </html>
